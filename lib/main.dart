@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:syro_loths_v1/theme/theme.dart';
 import 'pages/myHomePage.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Syro-loths',
-      theme: ThemeData.dark(),
+      theme: lightMode,
+      darkTheme: darkMode,
       home: const MyHomePage(title: 'Syro-Malabar Liturgy of the Hours'),
     );
   }
